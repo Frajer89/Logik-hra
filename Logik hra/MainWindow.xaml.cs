@@ -29,6 +29,7 @@ namespace Logik_hra
         {
             InitializeComponent();
             První_kolo();
+            GenerujBarvy();
         }
 
         private Brush GenerujBarvu()
@@ -171,10 +172,39 @@ namespace Logik_hra
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void BtnNovaHra_Click(object sender, RoutedEventArgs e)
         {
             První_kolo();
         }
+
+        private void BtnVyhodnotit_Click(object sender, RoutedEventArgs e)
+        {
+            int cerna = 0;
+            int bila = 0;
+            if (barva1 == Kruh_0_0.Fill)
+            {
+                cerna++;
+            }
+            else if(barva2 == Kruh_0_0.Fill || barva3 == Kruh_0_0.Fill || barva4 == Kruh_0_0.Fill)
+            {
+
+            }
+            if (barva2 == Kruh_0_1.Fill)
+            {
+                cerna++;
+            }
+            if (barva3 == Kruh_0_2.Fill)
+            {
+                cerna++;
+            }
+            if (barva4 == Kruh_0_3.Fill)
+            {
+                cerna++;
+            }
+        }
+
+        
     }
     }
 
