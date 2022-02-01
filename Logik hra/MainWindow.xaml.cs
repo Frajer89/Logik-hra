@@ -57,7 +57,7 @@ namespace Logik_hra
             }
             else if (cislo == 6)
             {
-                return  Brushes.Purple;
+                return Brushes.Purple;
             }
             return Brushes.Red;
         }
