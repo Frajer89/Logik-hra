@@ -49,7 +49,7 @@ namespace Logik_hra
             }
             else if (cislo == 4)
             {
-                return  Brushes.Yellow;
+                return Brushes.Yellow;
             }
             else if (cislo == 5)
             {
